@@ -1,0 +1,17 @@
+# Object files
+*.o
+
+# Compiled binary
+ft_printf
+test
+
+# Static library
+libftprintf.a
+
+# OS files
+.DS_Store
+
+# Editor/IDE
+.vscode/
+*.code-workspace
+*.swp
