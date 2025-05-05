@@ -6,7 +6,7 @@
 /*   By: aal-fala <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 01:56:55 by aal-fala          #+#    #+#             */
-/*   Updated: 2025/05/05 01:56:55 by aal-fala         ###   ########.fr       */
+/*   Updated: 2025/05/05 15:59:17 by aal-fala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ void	test_numbers(void)
 	ft_len = ft_printf("Unsigned: %u\n", 3000000000U);
 	std_len = printf("Unsigned: %u\n", 3000000000U);
 	ft_printf("Len (ft): %d | Len (std): %d\n", ft_len, std_len);
+	ft_printf("TestNull (ft): %p\n", NULL);
+	printf("TestNull (std): %p\n", NULL);
 }
 
 void	test_hex_and_ptr(void)

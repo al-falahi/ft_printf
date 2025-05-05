@@ -6,7 +6,7 @@
 /*   By: aal-fala <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 01:29:14 by aal-fala          #+#    #+#             */
-/*   Updated: 2025/05/05 01:29:14 by aal-fala         ###   ########.fr       */
+/*   Updated: 2025/05/05 15:56:34 by aal-fala         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ int	ft_put_ptr(unsigned long p)
 {
 	int	count;
 
+	if (!p)
+		return (ft_putstr("(nil)"));
 	count = 0;
 	count += ft_putstr("0x");
 	count += ft_put_hex(p, 0);
